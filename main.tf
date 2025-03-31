@@ -8,7 +8,7 @@ resource "aws_db_instance" "mydb" {
   engine              = "mysql"
   engine_version      = "8.0"
   instance_class      = "db.t3.micro"
-  identifier          = "my-mysql-db"
+  identifier          = "mysql_db_ triggered_by_Jenkins"
 username = var.mysql_db_username
 password = var.mysql_db_password
   parameter_group_name = "default.mysql8.0"
